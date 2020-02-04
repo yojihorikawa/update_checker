@@ -29,7 +29,7 @@ python2系で試してないので動くかどうか不明。
 
 # 結果
 ```
-Mac101:src yoji_horikawa$ cat 20200130.log | grep Stellar
+$ cat 20200130.log | grep Stellar
 [Medium] Project: Stellar, Title: "Stellar Winter Roundup 2019" is added.
 [Medium] Project: Stellar, Title: "SDFâ€™s Next Steps" is added.
 :
