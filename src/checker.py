@@ -25,11 +25,7 @@ GITRELEASEJSON_FILE = ROOT + 'git_release.json'
 MEDIUMJSON_FILE = ROOT + 'medium.json'
 MEDIUM_SEARCHMAX=7
 
-#Twitter APIを使用するためのConsumerキー、アクセストークン設定
-Consumer_key = ''
-Consumer_secret = ''
-Access_token = ''
-Access_secret = ''
+api = None
 
 def read_twitter_keys():
     res = None
@@ -39,23 +35,14 @@ def read_twitter_keys():
             if res == None:
                 raise Exception('Not valid keys.json')
 
-             #下記でローカルと勘違いされてしまう為global宣言
-            global Consumer_key
-            global Consumer_secret
-            global Access_token
-            global Access_secret
-
-            Consumer_key    = res['Consumer_key']
-            Consumer_secret = res['Consumer_secret']
-            Access_token    = res['Access_token']
-            Access_secret   = res['Access_secret']
+            #認証
+            auth = tweepy.OAuthHandler(res['Consumer_key'], res['Consumer_secret'])
+            auth.set_access_token(res['Access_token'], res['Access_secret'])
+            global api
+            api = tweepy.API(auth, wait_on_rate_limit = True)
     except Exception as ex:
         print(ex)
 
-#認証
-auth = tweepy.OAuthHandler(Consumer_key, Consumer_secret)
-auth.set_access_token(Access_token, Access_secret)
-api = tweepy.API(auth, wait_on_rate_limit = True)
 
 twitter_prev={}
 def twitter_load_prev():
