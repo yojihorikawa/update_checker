@@ -1,9 +1,6 @@
 # update_checker
 特定仮想通貨のアップデート状況を蓄積します。
 
-# update_checker
-特定仮想通貨のアップデート状況を蓄積します。
-
 # 使い方
 /usr/bin/python3 /src/checker.py >> /src/`date +\%Y\%m\%d`.log
 
