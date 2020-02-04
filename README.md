@@ -9,13 +9,15 @@
 
 python2系で試してないので動くかどうか不明。
 
-#設定
-######Docker系
+# 設定
+###### Docker系
 BeautifulSoup4, tweepy, etc...
 全部は覚えてない。。import文から察してください。
 
-######keys.json
-TwitterのAPIアクセスから下記を記載してペースト
+###### keys.json
+/src/keys.jsonを作成。
+TwitterのAPIアクセスから下記を記載してペースト。
+
 {
   "Consumer_key": "",
   "Consumer_secret": "",
@@ -23,6 +25,6 @@ TwitterのAPIアクセスから下記を記載してペースト
   "Access_secret": ""
 }
 
-######config.json
+###### config.json
 必要な仮想通貨の情報を記載。
 hp_newsのクローラーは未実装。
