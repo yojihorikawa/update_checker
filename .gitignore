@@ -1,6 +1,13 @@
+#original
+keys.json
+*.log
+.DS_Store
+medium.json
+twitter.json
+git_release.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
 *$py.class
 
 # C extensions
