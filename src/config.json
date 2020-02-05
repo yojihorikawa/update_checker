@@ -7,31 +7,10 @@
         "release": "https://github.com/qtumproject/qtum/releases"
     },
     {
-        "name": "ICON",
-        "hp_news": "https://icon.foundation/contents/resrce/media?lang=en",
-        "medium": "https://medium.com/@helloiconworld",
-        "twitter": "helloiconworld",
-        "release": "https://github.com/icon-project/loopchain/releases"
-    },
-    {
-        "name": "IOST",
-        "hp_news": "https://icon.foundation/contents/resrce/media?lang=en",
-        "medium": "https://medium.com/@iostoken",
-        "twitter": "IOStoken",
-        "release": "https://github.com/iost-official/go-iost/releases"
-    },
-    {
         "name": "Stellar",
         "hp_news": "https://www.stellar.org/blog",
         "medium": "https://medium.com/@StellarOrg",
         "twitter": "StellarOrg",
         "release": "https://github.com/stellar/stellar-core/releases"
-    },
-    {
-        "name": "Ontology",
-        "hp_news": "https://medium.com/@theontologyteam",
-        "medium": "https://medium.com/@theontologyteam",
-        "twitter": "OntologyNetwork",
-        "release": "https://github.com/ontio/ontology/releases"
     }
   ]
