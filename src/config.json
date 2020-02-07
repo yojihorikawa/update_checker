@@ -1,12 +1,5 @@
 [
     {
-        "name": "Qtum",
-        "hp_news": "https://qtum.org/en/news",
-        "medium": "https://medium.com/@Qtum",
-        "twitter": "QtumOfficial",
-        "release": "https://github.com/qtumproject/qtum/releases"
-    },
-    {
         "name": "Stellar",
         "hp_news": "https://www.stellar.org/blog",
         "medium": "https://medium.com/@StellarOrg",
