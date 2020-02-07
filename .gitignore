@@ -5,6 +5,7 @@ keys.json
 medium.json
 twitter.json
 git_release.json
+config.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

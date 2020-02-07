@@ -80,7 +80,7 @@ def collect_twitter(proj, user_name):
     # twitter releaseの記事をダンプ
     # dttf = datetime.datetime.now().strftime('%Y%m%d')
     with open(TWITTER_FILE, 'w', encoding='utf-8') as fp:
-        json.dump(twitter_all, fp, ensure_ascii=False)
+        json.dump(twitter_all, fp, ensure_ascii=False, indent=4)
 
 
 
@@ -116,7 +116,7 @@ def collect_gitrelease(name, url):
     # git releaseの記事をダンプ
     # dttf = datetime.datetime.now().strftime('%Y%m%d')
     with open(GITRELEASEJSON_FILE, 'w') as fp:
-        json.dump(gitrelease_all, fp)
+        json.dump(gitrelease_all, fp, indent=4)
 
 
 def title_exists(item_list, proj, title):
@@ -159,7 +159,7 @@ def collect_medium(name, url):
     # Mediumの記事をダンプ
     # dttf = datetime.datetime.now().strftime('%Y%m%d')
     with open(MEDIUMJSON_FILE, 'w') as fp:
-        json.dump(medium_all, fp)
+        json.dump(medium_all, fp, indent=4)
 
 
 def load_driver():
